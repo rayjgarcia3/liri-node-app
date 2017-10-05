@@ -48,14 +48,10 @@ if (argument === "spotify-this-song") {
         } else {
             spotify.search({
                 type: 'track',
-                query: "All the Small Things"
+                query: "The Sign"
             }, function(err, data) {
                 var data = data.tracks.items;
-                console.log(data[0].name);
-                console.log(data[0].album.href);
-                console.log(data[0].album.name);
-                console.log(data[0].preview_url);
-                console.log(data[0].artists[0].name);
+                
             });
         }
     });

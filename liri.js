@@ -43,6 +43,7 @@ if (argument === "spotify-this-song") {
                 console.log(data[i].album.href);
                 console.log(data[i].album.name);
                 console.log(data[i].preview_url);
+                console.log("-----------------------------")
             }
         } else {
             spotify.search({
